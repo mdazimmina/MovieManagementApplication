@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using MovieManagement.Data.Context;
+using MovieManagement.Repository.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.
+    GetConnectionString("DefaultConnection")));
+//unit of work
+builder.Services.AddTransient<IUnitOfWork,UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
