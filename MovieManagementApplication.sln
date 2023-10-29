@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManagement.API", "MovieManagement.API\MovieManagement.API.csproj", "{2F3D16AC-0B55-4038-AA9F-957BA4B8C726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManagement.Domain", "MovieManagement.Domain\MovieManagement.Domain.csproj", "{8D9E7D43-EA19-4565-B107-B49258FCE15B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManagement.Data", "MovieManagement.Data\MovieManagement.Data.csproj", "{0EFD04C0-4F11-4174-BC7D-FFE3A804035D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F3D16AC-0B55-4038-AA9F-957BA4B8C726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3D16AC-0B55-4038-AA9F-957BA4B8C726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3D16AC-0B55-4038-AA9F-957BA4B8C726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3D16AC-0B55-4038-AA9F-957BA4B8C726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9E7D43-EA19-4565-B107-B49258FCE15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9E7D43-EA19-4565-B107-B49258FCE15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9E7D43-EA19-4565-B107-B49258FCE15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9E7D43-EA19-4565-B107-B49258FCE15B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFD04C0-4F11-4174-BC7D-FFE3A804035D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFD04C0-4F11-4174-BC7D-FFE3A804035D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFD04C0-4F11-4174-BC7D-FFE3A804035D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFD04C0-4F11-4174-BC7D-FFE3A804035D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
